@@ -16,8 +16,6 @@ const SearchForm = () => {
 
   const pokemons = usePokemonCards()
 
-  console.log(pokemons)
-
   const onSubmit = useCallback(
     (data: FormData) => {
       pokemons.getPokemonCards({ query: data.searchField, page: 1 })
