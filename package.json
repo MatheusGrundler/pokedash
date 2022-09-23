@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test:ci": "jest --runInBand",
     "lint": "eslint src --max-warnings=0",
     "lint:fix": "eslint src --fix",
     "test": "jest",
