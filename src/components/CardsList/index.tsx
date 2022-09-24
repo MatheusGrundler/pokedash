@@ -56,7 +56,7 @@ const CardsList = ({ cards }: CardsListProps) => {
                     <S.CardInfosWrapper>
                       <ul>
                         <li>
-                          <span>Nome:</span>
+                          <span>Name:</span>
                           <p>{card.name}</p>
                         </li>
                         <li>
@@ -64,14 +64,14 @@ const CardsList = ({ cards }: CardsListProps) => {
                           <p>{card.id}</p>
                         </li>
                         <li>
-                          <span>Tipo(s):</span>
+                          <span>Type(s):</span>
                           {card.subtypes?.map((type) => (
                             <p key={type}>{type}</p>
                           ))}
                         </li>
                       </ul>
                       <Link href={`/card/${card.id}`} key={card.id}>
-                        <a>Ver mais informações</a>
+                        <a>More informations</a>
                       </Link>
                     </S.CardInfosWrapper>
                   </S.CardInfosWrapper>
@@ -99,7 +99,7 @@ const CardsList = ({ cards }: CardsListProps) => {
                     <S.CardInfosWrapper>
                       <ul>
                         <li>
-                          <span>Nome:</span>
+                          <span>Name:</span>
                           <p>{card.name}</p>
                         </li>
                         <li>
@@ -107,7 +107,7 @@ const CardsList = ({ cards }: CardsListProps) => {
                           <p>{card.id}</p>
                         </li>
                         <li>
-                          <span>Tipo(s):</span>
+                          <span>Type(s):</span>
 
                           {card.subtypes?.map((type) => (
                             <p key={type}>{type}</p>

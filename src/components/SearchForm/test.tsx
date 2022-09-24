@@ -8,25 +8,36 @@ const mockFunction = jest.fn()
 
 jest.mock('hooks/usePokemonCards', () => ({
   usePokemonCards: () => ({
-    getPokemonCards: mockFunction
+    getPokemonCards: mockFunction,
+    searchParams: 'pika'
   })
 }))
 
 describe('<SearchForm />', () => {
   it('should render field', () => {
     renderWithTheme(<SearchForm />)
-    expect(screen.getByLabelText(/busque um card/i)).toBeInTheDocument()
+    expect(screen.getByLabelText(/Search for a card/i)).toBeInTheDocument()
   })
 
   it('should be able to find pokemon', async () => {
     renderWithTheme(<SearchForm />)
 
-    const field = screen.getByLabelText(/busque um card/i)
+    const field = screen.getByLabelText(/Search for a card/i)
     await userEvent.type(field, 'Mew')
 
-    const buttonSearch = screen.getByText(/Buscar/i)
+    const buttonSearch = screen.getByRole('button', { name: /Search/i })
 
     await userEvent.click(buttonSearch)
+
+    expect(mockFunction).toHaveBeenCalled()
+  })
+
+  it('should be able to cleand the search ', async () => {
+    renderWithTheme(<SearchForm />)
+
+    const searchParam = screen.getByTestId('CancelIcon')
+
+    await userEvent.click(searchParam)
 
     expect(mockFunction).toHaveBeenCalled()
   })

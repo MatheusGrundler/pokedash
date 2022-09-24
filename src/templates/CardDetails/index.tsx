@@ -8,6 +8,7 @@ import { Card } from 'types/PokemonCards'
 
 import * as S from './styles'
 import { Button } from '@mui/material'
+import Footer from 'components/Footer'
 
 const CardDetailsTemplate = ({
   id,
@@ -105,6 +106,7 @@ const CardDetailsTemplate = ({
           </S.ContentWrapper>
         </S.Wrapper>
       </Container>
+      <Footer />
     </>
   )
 }

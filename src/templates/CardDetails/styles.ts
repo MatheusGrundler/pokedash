@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     margin: ${theme.spacings.huge} 0;
     display: grid;
     grid-template-columns: 1fr;
+    min-height: 1vh;
   `}
 `
 export const BreadcrumbWrapper = styled.div`

@@ -40,16 +40,21 @@ export function PokemonCardsProvider({ children }: PokemonCardsProviderProps) {
     ({ page = 1, query, size = 20 }: getPokemonCardsProps) => {
       const handler = async () => {
         setIsLoading(true)
-        setSearchParams(query)
 
         try {
           const pokemons = await apiPublic.get<CardsApiRespose>(
             `/cards?${
-              query ? `q=name:${query}*&` : ''
+              query ? `q=name:${query.trim()}*&` : ''
             }orderBy=name&pageSize=${size}&page=${page}`
           )
+          if (pokemons.data.data.length === 0) {
+            toast.error('Nenhum pokémon com esse nome, tente novamente')
+            setIsLoading(false)
+            return
+          }
 
           setPokemonCards(pokemons.data.data)
+          setSearchParams(query)
           setIsLoading(false)
         } catch (error: any) {
           toast.error('Houve um erro ao recuperar dados, tente novamente!')

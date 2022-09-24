@@ -1,8 +1,11 @@
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
+
 import { Container } from 'components/UI/Container'
 import * as S from './styles'
 
 const Header = () => {
+  const { t } = useTranslation('common')
   return (
     <S.Wrapper>
       <Container>
@@ -12,7 +15,7 @@ const Header = () => {
               <a>PokéDash</a>
             </Link>
           </h1>
-          <span>Conheça mais do seu pokémon favorito</span>
+          <span>{t('logoSubtitle')}</span>
         </S.LogoWrapper>
       </Container>
     </S.Wrapper>

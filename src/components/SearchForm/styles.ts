@@ -49,3 +49,17 @@ export const FormWrapper = styled.form`
     }
   `}
 `
+
+export const ChipWrapper = styled.div`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.small};
+
+    span {
+      color: ${theme.colors.white};
+      font-size: ${theme.font.sizes.large};
+    }
+    svg {
+      fill: ${theme.colors.white};
+    }
+  `}
+`

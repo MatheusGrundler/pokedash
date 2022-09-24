@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.section`
   ${({ theme }) => css`
     min-height: 100vh;
+
     .MuiCircularProgress-root {
       svg {
         color: ${theme.colors.white};
