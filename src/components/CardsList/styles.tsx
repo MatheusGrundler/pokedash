@@ -59,11 +59,13 @@ export const CardWrapper = styled.div`
 export const MobileListWrapper = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.huge};
-    .slick-initialized .slick-slide {
+    .slick-slide {
       > div {
         display: flex;
         justify-content: center;
         padding: 0 5px;
+        max-width: 250px;
+        margin: 0 auto;
       }
     }
     a {

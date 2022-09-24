@@ -32,7 +32,7 @@ const CardsList = ({ cards }: CardsListProps) => {
 
   useEffect(() => {
     //@ts-ignore
-    sliderRef.current?.slickGoTo(1)
+    sliderRef.current?.slickGoTo(0)
   }, [cards])
 
   return (
@@ -70,7 +70,7 @@ const CardsList = ({ cards }: CardsListProps) => {
                           ))}
                         </li>
                       </ul>
-                      <Link href={card.id} key={card.id}>
+                      <Link href={`/card/${card.id}`} key={card.id}>
                         <a>Ver mais informações</a>
                       </Link>
                     </S.CardInfosWrapper>
@@ -84,7 +84,7 @@ const CardsList = ({ cards }: CardsListProps) => {
         <MediaMatch greaterThan="md">
           <S.DesktopListWrapper>
             {cards.map((card) => (
-              <Link href={card.id} key={card.id}>
+              <Link href={`/card/${card.id}`} key={card.id}>
                 <a>
                   <S.CardWrapper>
                     <Image
