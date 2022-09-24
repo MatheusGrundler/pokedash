@@ -8,7 +8,8 @@ const mockFunction = jest.fn()
 
 jest.mock('hooks/usePokemonCards', () => ({
   usePokemonCards: () => ({
-    getPokemonCards: mockFunction
+    getPokemonCards: mockFunction,
+    searchParams: 'pika'
   })
 }))
 
@@ -27,6 +28,16 @@ describe('<SearchForm />', () => {
     const buttonSearch = screen.getByRole('button', { name: /Search/i })
 
     await userEvent.click(buttonSearch)
+
+    expect(mockFunction).toHaveBeenCalled()
+  })
+
+  it('should be able to cleand the search ', async () => {
+    renderWithTheme(<SearchForm />)
+
+    const searchParam = screen.getByTestId('CancelIcon')
+
+    await userEvent.click(searchParam)
 
     expect(mockFunction).toHaveBeenCalled()
   })

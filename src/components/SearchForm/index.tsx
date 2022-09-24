@@ -1,4 +1,4 @@
-import { Button, InputAdornment, TextField } from '@mui/material'
+import { Button, Chip, InputAdornment, TextField } from '@mui/material'
 import { Container } from 'components/UI/Container'
 import { usePokemonCards } from 'hooks/usePokemonCards'
 import { useCallback } from 'react'
@@ -23,6 +23,10 @@ const SearchForm = () => {
     [pokemons]
   )
 
+  const handleCleanSearch = useCallback(() => {
+    pokemons.getPokemonCards({ page: 1 })
+  }, [pokemons])
+
   return (
     <Container>
       <S.Wrapper>
@@ -40,6 +44,15 @@ const SearchForm = () => {
           />
           <Button type="submit">Search</Button>
         </S.FormWrapper>
+        {pokemons.searchParams && (
+          <S.ChipWrapper>
+            <Chip
+              label={pokemons.searchParams}
+              variant="outlined"
+              onDelete={handleCleanSearch}
+            />
+          </S.ChipWrapper>
+        )}
       </S.Wrapper>
     </Container>
   )

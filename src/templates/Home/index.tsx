@@ -61,6 +61,7 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
     <S.Wrapper>
       <Header />
       <SearchForm />
+
       <CardsList cards={pokemonList} />
       <S.PaginationWrapper>
         <Button
@@ -79,6 +80,7 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
           Next Page
         </Button>
       </S.PaginationWrapper>
+
       {isLoading && (
         <Backdrop open>
           <CircularProgress color="secondary" />
