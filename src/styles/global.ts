@@ -96,39 +96,6 @@ ${({ theme }) => css`
     overflow-x: hidden;
     padding-right: 0 !important;
   }
-
-  /**SWAL STYLE */
-  .swal2-container {
-    .swal2-popup {
-      width: 40rem;
-      max-width: 100%;
-      .swal2-title {
-        font-size: ${theme.font.sizes.xlarge};
-        color: ${theme.colors.black};
-      }
-      .swal2-html-container {
-        font-size: ${theme.font.sizes.large};
-        color: ${theme.colors.gray};
-      }
-
-      .swal2-confirm {
-        background-color: ${theme.colors.gray};
-        color: ${theme.colors.white};
-        font-size: ${theme.font.sizes.medium};
-        outline: none;
-        border: 0;
-        text-transform: uppercase;
-        cursor: pointer;
-        border-radius: ${theme.border.radius};
-        padding: ${theme.spacings.xxsmall};
-        text-decoration: none;
-        font-family: ${theme.font.family};
-        font-weight: bold;
-        width: 12rem;
-        height: 4rem;
-      }
-    }
-  }
 `}
 
 `

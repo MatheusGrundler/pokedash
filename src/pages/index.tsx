@@ -1,7 +1,8 @@
 import { GetServerSideProps } from 'next'
+
 import HomeTemplate from 'templates/Home'
-import { CardsApiRespose } from 'types/CardsApiRespose'
 import { apiPrivate } from 'services/api'
+import { CardsApiRespose } from 'types/CardsApiRespose'
 
 export default function Home(data: CardsApiRespose) {
   return <HomeTemplate cardsData={data} />

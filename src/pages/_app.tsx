@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { ToastContainer } from 'react-toastify'
+
 import { AppContextProvider } from 'hooks/AppContextProvider'
 
 import 'react-toastify/dist/ReactToastify.css'

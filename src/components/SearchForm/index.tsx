@@ -28,7 +28,7 @@ const SearchForm = () => {
       <S.Wrapper>
         <S.FormWrapper onSubmit={handleSubmit(onSubmit)}>
           <TextField
-            label="Busque um card"
+            label="Search for a card"
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
@@ -38,7 +38,7 @@ const SearchForm = () => {
             }}
             {...register('searchField')}
           />
-          <Button type="submit">Buscar</Button>
+          <Button type="submit">Search</Button>
         </S.FormWrapper>
       </S.Wrapper>
     </Container>

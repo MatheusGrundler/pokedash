@@ -1,5 +1,6 @@
 import { Backdrop, Button, CircularProgress } from '@mui/material'
 import CardsList from 'components/CardsList'
+import Footer from 'components/Footer'
 import Header from 'components/Header'
 import SearchForm from 'components/SearchForm'
 import { usePokemonCards } from 'hooks/usePokemonCards'
@@ -68,14 +69,14 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
           startIcon={<FaChevronLeft />}
           disabled={currentPage === 1}
         >
-          Página anterior
+          Previous page
         </Button>
         <Button
           variant="contained"
           onClick={() => handleChangePage('next')}
           endIcon={<FaChevronRight />}
         >
-          Próxima página
+          Next Page
         </Button>
       </S.PaginationWrapper>
       {isLoading && (
@@ -83,6 +84,7 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
           <CircularProgress color="secondary" />
         </Backdrop>
       )}
+      <Footer />
     </S.Wrapper>
   )
 }

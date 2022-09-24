@@ -2,6 +2,7 @@
 const withPWA = require('next-pwa')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const isProd = process.env.NODE_ENV === 'production'
+const nextTranslate = require('next-translate')
 
 module.exports = withPWA({
   pwa: {
@@ -11,14 +12,16 @@ module.exports = withPWA({
   swcMinify: true
 })
 
-module.exports = {
+module.exports = nextTranslate({
+  images: {
+    domains: ['images.pokemontcg.io']
+  },
+
   /**
    * Custom Webpack Config
    * https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config
    */
-  images: {
-    domains: ['images.pokemontcg.io']
-  },
+
   webpack(config, options) {
     const { dev, isServer } = options
 
@@ -29,4 +32,4 @@ module.exports = {
 
     return config
   }
-}
+})

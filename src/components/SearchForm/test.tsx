@@ -15,16 +15,16 @@ jest.mock('hooks/usePokemonCards', () => ({
 describe('<SearchForm />', () => {
   it('should render field', () => {
     renderWithTheme(<SearchForm />)
-    expect(screen.getByLabelText(/busque um card/i)).toBeInTheDocument()
+    expect(screen.getByLabelText(/Search for a card/i)).toBeInTheDocument()
   })
 
   it('should be able to find pokemon', async () => {
     renderWithTheme(<SearchForm />)
 
-    const field = screen.getByLabelText(/busque um card/i)
+    const field = screen.getByLabelText(/Search for a card/i)
     await userEvent.type(field, 'Mew')
 
-    const buttonSearch = screen.getByText(/Buscar/i)
+    const buttonSearch = screen.getByRole('button', { name: /Search/i })
 
     await userEvent.click(buttonSearch)
 
