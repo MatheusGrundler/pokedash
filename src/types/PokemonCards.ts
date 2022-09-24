@@ -108,7 +108,7 @@ export type Card = {
   name: string
   images: CardImage
   subtypes?: string[]
-  resistence?: Resistance
+  resistances?: Resistance[]
   weaknesses?: Weakness[]
   attacks?: Attack[]
   supertype?: string

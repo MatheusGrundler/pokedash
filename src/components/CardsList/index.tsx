@@ -32,7 +32,7 @@ const CardsList = ({ cards }: CardsListProps) => {
 
   useEffect(() => {
     //@ts-ignore
-    sliderRef.current?.slickGoTo(1)
+    sliderRef.current?.slickGoTo(0)
   }, [cards])
 
   return (

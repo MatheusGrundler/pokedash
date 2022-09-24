@@ -94,6 +94,7 @@ ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     background-color: ${theme.colors.black};
     overflow-x: hidden;
+    padding-right: 0 !important;
   }
 
   /**SWAL STYLE */
