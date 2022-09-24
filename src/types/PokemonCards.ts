@@ -3,23 +3,23 @@
 //   text: string
 //   type: string
 // }
-// export type Attack = {
-//   cost: string[]
-//   name: string
-//   text: string
-//   damage: string
-//   convertedEnergyCost: string | number
-// }
+export type Attack = {
+  cost: string[]
+  name: string
+  text: string
+  damage: string
+  convertedEnergyCost: string | number
+}
 
-// export type Resistance = {
-//   type: string
-//   value: string
-// }
+export type Resistance = {
+  type: string
+  value: string
+}
 
-// export type Weakness = {
-//   type: string
-//   value: string
-// }
+export type Weakness = {
+  type: string
+  value: string
+}
 
 // export interface SetImage {
 //   symbol: string
@@ -108,4 +108,8 @@ export type Card = {
   name: string
   images: CardImage
   subtypes?: string[]
+  resistence?: Resistance
+  weaknesses?: Weakness[]
+  attacks?: Attack[]
+  supertype?: string
 }

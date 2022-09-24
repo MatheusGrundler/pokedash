@@ -7,10 +7,16 @@ export default function Home(data: CardsApiRespose) {
   return <HomeTemplate cardsData={data} />
 }
 
-export const getStaticProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const pokemons = await apiPrivate.get<CardsApiRespose>(
     `/cards?orderBy=name&pageSize=20`
   )
+
+  if (!pokemons) {
+    return {
+      notFound: true
+    }
+  }
 
   // Pass data to the page via props
   return { props: pokemons.data }
