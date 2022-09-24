@@ -95,7 +95,6 @@ ${({ theme }) => css`
     background-color: ${theme.colors.black};
     overflow-x: hidden;
     padding-right: 0 !important;
-
   }
 `}
 
