@@ -1,11 +1,11 @@
+import { useCallback, useEffect, useState } from 'react'
 import { Backdrop, Button, CircularProgress } from '@mui/material'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import CardsList from 'components/CardsList'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import SearchForm from 'components/SearchForm'
 import { usePokemonCards } from 'hooks/usePokemonCards'
-import { useCallback, useEffect, useState } from 'react'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { CardsApiRespose } from 'types/CardsApiRespose'
 
 export type HomeTemplateProps = {
@@ -14,13 +14,12 @@ export type HomeTemplateProps = {
 import * as S from './styles'
 
 const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
-  const [currentPage, setCurrentPage] = useState(cardsData.page)
   const [pokemonList, setPokemonList] = useState(cardsData.data)
   const pokemons = usePokemonCards()
   const pokemonsData = pokemons.pokemonCards
-  const getPokemons = pokemons.getPokemonCards
+  const currentPage = pokemons.currentPage
   const isLoading = pokemons.isLoading
-  const pokemonSearch = pokemons.searchParams
+  const pokemonPaginate = pokemons.pokemonCardsPaginate
 
   useEffect(() => {
     window.scroll({
@@ -38,23 +37,11 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
     setPokemonList(pokemonsData)
   }, [pokemonsData])
 
-  useEffect(() => {
-    setCurrentPage(1)
-  }, [pokemonSearch])
-
   const handleChangePage = useCallback(
     (type: 'next' | 'previous') => {
-      if (type === 'previous' && currentPage === 1) {
-        return
-      }
-      getPokemons({
-        page: type === 'next' ? currentPage + 1 : currentPage - 1,
-        query: pokemonSearch
-      })
-
-      setCurrentPage(type === 'next' ? currentPage + 1 : currentPage - 1)
+      pokemonPaginate({ type })
     },
-    [currentPage, getPokemons, pokemonSearch]
+    [pokemonPaginate]
   )
 
   return (

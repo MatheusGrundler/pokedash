@@ -1,6 +1,6 @@
-import { Button } from '@mui/material'
-import { v4 as uuidv4 } from 'uuid'
 import { useCallback, useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
+import { Button } from '@mui/material'
 import { FaPlusCircle } from 'react-icons/fa'
 import { Attack } from 'types/PokemonCards'
 import * as S from './styles'
@@ -49,10 +49,10 @@ const CardAttacks = ({ attacks }: CardAttacksProps) => {
           <p className="description">{modalData?.text}</p>
           <ul className="damageAndCost">
             <li>
-              Damage: <span>{modalData?.damage}</span>
+              <p>Damage:</p> <span>{modalData?.damage}</span>
             </li>
             <li>
-              Energy Cost:
+              <p>Energy Cost:</p>
               <span>
                 {modalData?.convertedEnergyCost} (
                 {modalData?.cost.map((cost) => (

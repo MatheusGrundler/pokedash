@@ -60,8 +60,17 @@ export const AttacksDetailsWrapper = styled.div`
       font-weight: bold;
       color: ${theme.colors.white};
       margin-bottom: ${theme.spacings.small};
+      li {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        margin-right: ${theme.spacings.xxsmall};
+      }
       span {
-        margin-left: ${theme.spacings.xxsmall};
+        & + span {
+          margin-left: ${theme.spacings.xxsmall};
+        }
       }
     }
   `}

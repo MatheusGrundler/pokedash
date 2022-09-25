@@ -4,6 +4,7 @@ import React, {
   useCallback,
   useContext,
   useMemo,
+  useEffect,
   useState
 } from 'react'
 import { toast } from 'react-toastify'
@@ -19,12 +20,17 @@ type getPokemonCardsProps = {
   size?: number
   query?: string
 }
+type PokemonCardsPaginateProps = {
+  type: 'next' | 'previous'
+}
 
 type PokemonCardsContextProps = {
   pokemonCards: Card[]
   isLoading: boolean
   searchParams: string | undefined
   getPokemonCards: ({ page, query, size }: getPokemonCardsProps) => void
+  pokemonCardsPaginate: ({ type }: PokemonCardsPaginateProps) => void
+  currentPage: number
 }
 
 const PokemonCardsContext = createContext<PokemonCardsContextProps>(
@@ -35,6 +41,7 @@ export function PokemonCardsProvider({ children }: PokemonCardsProviderProps) {
   const [pokemonCards, setPokemonCards] = useState<Card[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [searchParams, setSearchParams] = useState<string | undefined>()
+  const [currentPage, setCurrentPage] = useState(1)
 
   const getPokemonCards = useCallback(
     ({ page = 1, query, size = 20 }: getPokemonCardsProps) => {
@@ -66,10 +73,44 @@ export function PokemonCardsProvider({ children }: PokemonCardsProviderProps) {
     },
     []
   )
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchParams])
+
+  const pokemonCardsPaginate = useCallback(
+    ({ type }: PokemonCardsPaginateProps) => {
+      if (type === 'previous' && currentPage === 1) {
+        return
+      }
+      console.log('chamou aqui')
+
+      getPokemonCards({
+        page: type === 'next' ? currentPage + 1 : currentPage - 1,
+        query: searchParams
+      })
+
+      setCurrentPage(type === 'next' ? currentPage + 1 : currentPage - 1)
+    },
+    [currentPage, searchParams, getPokemonCards]
+  )
 
   const PokemonCardsContextValue = useMemo(
-    () => ({ pokemonCards, isLoading, getPokemonCards, searchParams }),
-    [pokemonCards, isLoading, getPokemonCards, searchParams]
+    () => ({
+      pokemonCards,
+      isLoading,
+      getPokemonCards,
+      searchParams,
+      pokemonCardsPaginate,
+      currentPage
+    }),
+    [
+      pokemonCards,
+      isLoading,
+      getPokemonCards,
+      searchParams,
+      pokemonCardsPaginate,
+      currentPage
+    ]
   )
   return (
     <PokemonCardsContext.Provider value={PokemonCardsContextValue}>

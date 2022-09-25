@@ -11,7 +11,7 @@ export default function Card(data: CardProps) {
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const pokemon = await apiPrivate.get<CardApiRespose>(`/cards/${params!.id}`)
 
-  if (!pokemon) {
+  if (!pokemon.data.data) {
     return {
       notFound: true
     }

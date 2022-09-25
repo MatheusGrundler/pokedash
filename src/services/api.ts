@@ -12,4 +12,11 @@ const apiPrivate = axios.create({
   headers: { 'X-Api-Key': process.env.API_TOKEN }
 })
 
+apiPublic.defaults.validateStatus = function () {
+  return true
+}
+apiPrivate.defaults.validateStatus = function () {
+  return true
+}
+
 export { apiPublic, apiPrivate }
