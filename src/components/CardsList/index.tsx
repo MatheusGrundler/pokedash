@@ -6,6 +6,7 @@ import { Container } from 'components/UI/Container'
 import Slider, { SliderSettings } from 'components/Slider'
 import MediaMatch from 'components/UI/MediaMatch'
 import { useEffect, useRef } from 'react'
+import Notfound from 'components/NotFound'
 
 export type CardsListProps = {
   cards: Card[]
@@ -83,7 +84,7 @@ const CardsList = ({ cards }: CardsListProps) => {
 
         <MediaMatch greaterThan="md">
           <S.DesktopListWrapper>
-            {cards.map((card) => (
+            {cards?.map((card) => (
               <Link href={`/card/${card.id}`} key={card.id}>
                 <a>
                   <S.CardWrapper>
@@ -121,6 +122,10 @@ const CardsList = ({ cards }: CardsListProps) => {
             ))}
           </S.DesktopListWrapper>
         </MediaMatch>
+
+        {cards.length === 0 && (
+          <Notfound primaryMessage="Nenhum card encontrado" />
+        )}
       </S.Wrapper>
     </Container>
   )

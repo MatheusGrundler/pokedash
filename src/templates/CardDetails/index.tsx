@@ -80,7 +80,7 @@ const CardDetailsTemplate = ({
                     </li>
                   ))}
                   {!weaknesses && (
-                    <li>
+                    <li data-testid="NoWeakness">
                       <p>-</p>
                     </li>
                   )}
@@ -96,7 +96,7 @@ const CardDetailsTemplate = ({
                     </li>
                   ))}
                   {!resistances && (
-                    <li>
+                    <li data-testid="NoResistence">
                       <p>-</p>
                     </li>
                   )}

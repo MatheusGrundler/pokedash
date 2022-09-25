@@ -64,15 +64,14 @@ const HomeTemplate = ({ cardsData }: HomeTemplateProps) => {
           onClick={() => handleChangePage('next')}
           endIcon={<FaChevronRight />}
         >
-          Next Page
+          Next page
         </Button>
       </S.PaginationWrapper>
 
-      {isLoading && (
-        <Backdrop open>
-          <CircularProgress color="secondary" />
-        </Backdrop>
-      )}
+      <Backdrop open={isLoading} data-testid="backdropLoading">
+        <CircularProgress color="secondary" />
+      </Backdrop>
+
       <Footer />
     </S.Wrapper>
   )

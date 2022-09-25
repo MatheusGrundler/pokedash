@@ -1,316 +1,278 @@
 {
-	"data": [
-		{
-			"id": "smp-SM228",
-			"name": "Armored Mewtwo",
-			"supertype": "Pokémon",
-			"subtypes": [
-				"Basic"
-			],
-			"hp": "120",
-			"types": [
-				"Psychic"
-			],
-			"attacks": [
-				{
-					"name": "Psychic Raid",
-					"cost": [
-						"Psychic",
-						"Psychic",
-						"Psychic"
-					],
-					"convertedEnergyCost": 3,
-					"damage": "130",
-					"text": "This Pokémon can't attack during your next turn."
-				}
-			],
-			"weaknesses": [
-				{
-					"type": "Psychic",
-					"value": "×2"
-				}
-			],
-			"retreatCost": [
-				"Colorless",
-				"Colorless",
-				"Colorless"
-			],
-			"convertedRetreatCost": 3,
-			"set": {
-				"id": "smp",
-				"name": "SM Black Star Promos",
-				"series": "Sun & Moon",
-				"printedTotal": 248,
-				"total": 250,
-				"legalities": {
-					"unlimited": "Legal",
-					"expanded": "Legal"
-				},
-				"ptcgoCode": "PR-SM",
-				"releaseDate": "2017/02/03",
-				"updatedAt": "2020/05/01 16:06:00",
-				"images": {
-					"symbol": "https://images.pokemontcg.io/smp/symbol.png",
-					"logo": "https://images.pokemontcg.io/smp/logo.png"
-				}
-			},
-			"number": "SM228",
-			"artist": "2019 Pikachu Project",
-			"rarity": "Promo",
-			"flavorText": "Mewtwo was on a rampage searching for meaning to its existence in this world when Giovanni suppressed and controlled its power.",
-			"nationalPokedexNumbers": [
-				150
-			],
-			"legalities": {
-				"unlimited": "Legal",
-				"expanded": "Legal"
-			},
-			"images": {
-				"small": "https://images.pokemontcg.io/smp/SM228.png",
-				"large": "https://images.pokemontcg.io/smp/SM228_hires.png"
-			},
-			"tcgplayer": {
-				"url": "https://prices.pokemontcg.io/tcgplayer/smp-SM228",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"holofoil": {
-						"low": 26.0,
-						"mid": 36.0,
-						"high": 99.99,
-						"market": 39.08,
-						"directLow": 31.99
-					}
-				}
-			},
-			"cardmarket": {
-				"url": "https://prices.pokemontcg.io/cardmarket/smp-SM228",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"averageSellPrice": 22.56,
-					"lowPrice": 9.99,
-					"trendPrice": 23.59,
-					"reverseHoloTrend": 22.59,
-					"lowPriceExPlus": 14.0,
-					"avg1": 20.0,
-					"avg7": 22.21,
-					"avg30": 23.97,
-					"reverseHoloAvg1": 25.95,
-					"reverseHoloAvg7": 23.93,
-					"reverseHoloAvg30": 30.02
-				}
-			}
-		},
-		{
-			"id": "xy8-159",
-			"name": "M Mewtwo-EX",
-			"supertype": "Pokémon",
-			"subtypes": [
-				"MEGA",
-				"EX"
-			],
-			"hp": "230",
-			"types": [
-				"Psychic"
-			],
-			"evolvesFrom": "Mewtwo-EX",
-			"rules": [
-				"Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-				"Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-			],
-			"attacks": [
-				{
-					"name": "Vanishing Strike",
-					"cost": [
-						"Psychic",
-						"Fighting",
-						"Fighting",
-						"Colorless"
-					],
-					"convertedEnergyCost": 4,
-					"damage": "150+",
-					"text": "If there is any Stadium card in play, this attack does 50 more damage, and this attack's damage isn't affected by Resistance or any effects on your opponent's Active Pokémon."
-				}
-			],
-			"weaknesses": [
-				{
-					"type": "Psychic",
-					"value": "×2"
-				}
-			],
-			"retreatCost": [
-				"Colorless",
-				"Colorless",
-				"Colorless"
-			],
-			"convertedRetreatCost": 3,
-			"set": {
-				"id": "xy8",
-				"name": "BREAKthrough",
-				"series": "XY",
-				"printedTotal": 162,
-				"total": 165,
-				"legalities": {
-					"unlimited": "Legal",
-					"expanded": "Legal"
-				},
-				"ptcgoCode": "BKT",
-				"releaseDate": "2015/11/04",
-				"updatedAt": "2019/04/10 19:59:00",
-				"images": {
-					"symbol": "https://images.pokemontcg.io/xy8/symbol.png",
-					"logo": "https://images.pokemontcg.io/xy8/logo.png"
-				}
-			},
-			"number": "159",
-			"artist": "5ban Graphics",
-			"rarity": "Rare Ultra",
-			"nationalPokedexNumbers": [
-				150
-			],
-			"legalities": {
-				"unlimited": "Legal",
-				"expanded": "Legal"
-			},
-			"images": {
-				"small": "https://images.pokemontcg.io/xy8/159.png",
-				"large": "https://images.pokemontcg.io/xy8/159_hires.png"
-			},
-			"tcgplayer": {
-				"url": "https://prices.pokemontcg.io/tcgplayer/xy8-159",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"holofoil": {
-						"low": 18.0,
-						"mid": 20.0,
-						"high": 70.0,
-						"market": 21.27
-					}
-				}
-			},
-			"cardmarket": {
-				"url": "https://prices.pokemontcg.io/cardmarket/xy8-159",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"averageSellPrice": 22.75,
-					"lowPrice": 12.5,
-					"trendPrice": 23.99,
-					"reverseHoloTrend": 21.9,
-					"lowPriceExPlus": 24.99,
-					"avg1": 27.5,
-					"avg7": 24.72,
-					"avg30": 29.09,
-					"reverseHoloAvg1": 25.0,
-					"reverseHoloAvg7": 22.34,
-					"reverseHoloAvg30": 16.33
-				}
-			}
-		},
-		{
-			"id": "xy8-64",
-			"name": "M Mewtwo-EX",
-			"supertype": "Pokémon",
-			"subtypes": [
-				"MEGA",
-				"EX"
-			],
-			"hp": "210",
-			"types": [
-				"Psychic"
-			],
-			"evolvesFrom": "Mewtwo-EX",
-			"rules": [
-				"Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-				"Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-			],
-			"attacks": [
-				{
-					"name": "Psychic Infinity",
-					"cost": [
-						"Colorless",
-						"Colorless"
-					],
-					"convertedEnergyCost": 2,
-					"damage": "10+",
-					"text": "This attack does 30 more damage times the amount of Energy attached to both Active Pokémon. This attack's damage isn't affected by Weakness."
-				}
-			],
-			"weaknesses": [
-				{
-					"type": "Psychic",
-					"value": "×2"
-				}
-			],
-			"retreatCost": [
-				"Colorless",
-				"Colorless"
-			],
-			"convertedRetreatCost": 2,
-			"set": {
-				"id": "xy8",
-				"name": "BREAKthrough",
-				"series": "XY",
-				"printedTotal": 162,
-				"total": 165,
-				"legalities": {
-					"unlimited": "Legal",
-					"expanded": "Legal"
-				},
-				"ptcgoCode": "BKT",
-				"releaseDate": "2015/11/04",
-				"updatedAt": "2019/04/10 19:59:00",
-				"images": {
-					"symbol": "https://images.pokemontcg.io/xy8/symbol.png",
-					"logo": "https://images.pokemontcg.io/xy8/logo.png"
-				}
-			},
-			"number": "64",
-			"artist": "5ban Graphics",
-			"rarity": "Rare Holo EX",
-			"nationalPokedexNumbers": [
-				150
-			],
-			"legalities": {
-				"unlimited": "Legal",
-				"expanded": "Legal"
-			},
-			"images": {
-				"small": "https://images.pokemontcg.io/xy8/64.png",
-				"large": "https://images.pokemontcg.io/xy8/64_hires.png"
-			},
-			"tcgplayer": {
-				"url": "https://prices.pokemontcg.io/tcgplayer/xy8-64",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"holofoil": {
-						"low": 9.25,
-						"mid": 12.09,
-						"high": 20.77,
-						"market": 11.59,
-						"directLow": 9.26
-					}
-				}
-			},
-			"cardmarket": {
-				"url": "https://prices.pokemontcg.io/cardmarket/xy8-64",
-				"updatedAt": "2022/09/22",
-				"prices": {
-					"averageSellPrice": 2.27,
-					"lowPrice": 4.99,
-					"trendPrice": 2.36,
-					"reverseHoloTrend": 5.0,
-					"lowPriceExPlus": 7.8,
-					"avg1": 2.27,
-					"avg7": 5.04,
-					"avg30": 5.04,
-					"reverseHoloAvg1": 5.0,
-					"reverseHoloAvg7": 3.75,
-					"reverseHoloAvg30": 3.75
-				}
-			}
-		}
-	],
-	"page": 1,
-	"pageSize": 3,
-	"count": 3,
-	"totalCount": 114
+  "data": [
+    {
+      "id": "smp-SM228",
+      "name": "Armored Mewtwo",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "hp": "120",
+      "types": ["Psychic"],
+      "attacks": [
+        {
+          "name": "Psychic Raid",
+          "cost": ["Psychic", "Psychic", "Psychic"],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "This Pokémon can't attack during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": ["Colorless", "Colorless", "Colorless"],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "smp",
+        "name": "SM Black Star Promos",
+        "series": "Sun & Moon",
+        "printedTotal": 248,
+        "total": 250,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-SM",
+        "releaseDate": "2017/02/03",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/smp/symbol.png",
+          "logo": "https://images.pokemontcg.io/smp/logo.png"
+        }
+      },
+      "number": "SM228",
+      "artist": "2019 Pikachu Project",
+      "rarity": "Promo",
+      "flavorText": "Mewtwo was on a rampage searching for meaning to its existence in this world when Giovanni suppressed and controlled its power.",
+      "nationalPokedexNumbers": [150],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/smp/SM228.png",
+        "large": "https://images.pokemontcg.io/smp/SM228_hires.png"
+      }
+    },
+    {
+      "id": "xy8-159",
+      "name": "M Mewtwo-EX",
+      "supertype": "Pokémon",
+      "subtypes": ["MEGA", "EX"],
+      "hp": "230",
+      "types": ["Psychic"],
+      "evolvesFrom": "Mewtwo-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Vanishing Strike",
+          "cost": ["Psychic", "Fighting", "Fighting", "Colorless"],
+          "convertedEnergyCost": 4,
+          "damage": "150+",
+          "text": "If there is any Stadium card in play, this attack does 50 more damage, and this attack's damage isn't affected by Resistance or any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": ["Colorless", "Colorless", "Colorless"],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 165,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "159",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Ultra",
+      "nationalPokedexNumbers": [150],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/159.png",
+        "large": "https://images.pokemontcg.io/xy8/159_hires.png"
+      }
+    },
+    {
+      "id": "hgss3-61",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "hp": "50",
+      "types": ["Lightning"],
+      "evolvesTo": ["Raichu"],
+      "attacks": [
+        {
+          "name": "Slam",
+          "cost": ["Colorless"],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": ["Colorless"],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "hgss3",
+        "name": "HS—Undaunted",
+        "series": "HeartGold & SoulSilver",
+        "printedTotal": 90,
+        "total": 91,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "UD",
+        "releaseDate": "2010/08/18",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/hgss3/symbol.png",
+          "logo": "https://images.pokemontcg.io/hgss3/logo.png"
+        }
+      },
+      "number": "61",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "flavorText": "This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.",
+      "nationalPokedexNumbers": [25],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/hgss3/61.png",
+        "large": "https://images.pokemontcg.io/hgss3/61_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/hgss3-61",
+        "updatedAt": "2022/09/22",
+        "prices": {
+          "normal": {
+            "low": 1.29,
+            "mid": 2.43,
+            "high": 8.06,
+            "market": 2.5,
+            "directLow": 1.24
+          },
+          "reverseHolofoil": {
+            "low": 6.99,
+            "mid": 19.99,
+            "high": 23.99,
+            "market": 23.5
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/hgss3-61",
+        "updatedAt": "2022/09/22",
+        "prices": {
+          "averageSellPrice": 2.16,
+          "lowPrice": 0.02,
+          "trendPrice": 2.01,
+          "reverseHoloSell": 25.0,
+          "reverseHoloLow": 2.5,
+          "reverseHoloTrend": 14.34,
+          "lowPriceExPlus": 0.35,
+          "avg1": 0.25,
+          "avg7": 2.49,
+          "avg30": 1.78,
+          "reverseHoloAvg1": 25.0,
+          "reverseHoloAvg7": 17.48,
+          "reverseHoloAvg30": 7.35
+        }
+      }
+    },
+    {
+      "id": "xy8-64",
+      "name": "M Mewtwo-EX",
+      "supertype": "Pokémon",
+      "subtypes": ["MEGA", "EX"],
+      "hp": "210",
+      "types": ["Psychic"],
+      "evolvesFrom": "Mewtwo-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Psychic Infinity",
+          "cost": ["Colorless", "Colorless"],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 30 more damage times the amount of Energy attached to both Active Pokémon. This attack's damage isn't affected by Weakness."
+        }
+      ],
+
+      "retreatCost": ["Colorless", "Colorless"],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 165,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "64",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [150],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/64.png",
+        "large": "https://images.pokemontcg.io/xy8/64_hires.png"
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 3,
+  "count": 3,
+  "totalCount": 114
 }
