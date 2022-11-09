@@ -31,7 +31,7 @@
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.6",
     "axios": "^0.27.2",
-    "jest-environment-jsdom": "^29.0.3",
+    "jest-environment-jsdom": "^29.3.1",
     "next": "12.3.1",
     "next-pwa": "^5.2.21",
     "next-translate": "^1.6.0",
